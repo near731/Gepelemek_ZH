@@ -1,0 +1,67 @@
+body {
+    background:#dee2a6;
+}
+
+nav.navbar {
+    background-color:#145a0b;
+    color:#fff;
+}
+
+.navbar .navbar-brand {
+    color:#fff;
+}
+
+.card-control-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    align-items: center;
+    height:50px;
+    background:#145a0b; 
+    color:#fff;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.controls span {
+    color:#fff;
+}
+
+.btn-primary {
+    background-color: #005380;
+    border-color:#005380;
+}
+
+.card-control {
+    margin-top:50px;
+    border:1px solid #145a0b;
+    max-width:800px;
+    width:100%;
+}
+
+.q-card {
+    overflow: hidden;
+}
+
+.q-card img {
+    vertical-align: middle;
+    max-width:798px;
+    width:100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.q-card.hidden {
+    height:32px;
+}
+
+.qc3.hidden, .qc8.hidden, .qc14.hidden, .qc23.hidden, .qc25.hidden, .qc26.hidden, .qc27.hidden, .qc35.hidden, .qc36.hidden, .qc37.hidden, .qc45.hidden, .qc46.hidden, .qc50.hidden, .qc52.hidden, .qc58.hidden, .qc59.hidden, .qc61.hidden, .qc65.hidden, .qc66.hidden, .qc67.hidden, .qc69.hidden, .qc70.hidden, .qc73.hidden, .qc74.hidden, .qc75.hidden, .qc76.hidden, .qc77.hidden, .qc79.hidden, .qc80.hidden, .qc81.hidden, .qc84.hidden, .qc85.hidden, .qc87.hidden, .qc88.hidden, .qc92.hidden, .qc94.hidden {
+    height:50px;
+}
+
+.qc52.hidden, .qc70.hidden {
+    height:68px;
+}

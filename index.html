@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Gépelemek - Self Check 2</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://use.fontawesome.com/de8d7f2b58.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">Gépelemek ZH2 Minimumkérdés gyakorló (Átdolgozta Németh Áron Imre)</a>
+        <span class="text-white">&copy; Riskutia Balázs</span>
+    </nav>
+
+    <div class="card-control-container">
+        <div class="card-control rounded" id="qCard">
+            <div class="controls d-flex justify-content-between">
+                <div class="left">
+                    <span><span>{{ currentQuestionIndex + 1 }}</span>/<span>94</span></span>
+                </div>
+                <div class="right">
+                    <div class="custom-control custom-checkbox mr-2" style="display:inline;">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" v-model="isRandom">
+                        <label class="custom-control-label text-white" for="customCheck1">Random sorrend</label>
+                    </div>
+                    <button class="btn btn-success" v-if="!isShown" @click="isShown = true">Show</button>
+                    <button class="btn btn-info" v-if="isShown" @click="isShown = false">Hide</button>
+                    <button class="btn btn-primary" :class="{ disabled : currentQuestionIndex == 0 }" @click="back()"><i
+                            class="fa fa-arrow-left"></i></button>
+                    <button class="btn btn-primary" :class="{ disabled : currentQuestionIndex == 122 }"
+                        @click="next()"><i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="q-card" :class="cssClass">
+                <img :src="currentImage">
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGIN JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- END JS -->
+</body>
+
+</html>
